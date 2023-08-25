@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    h1 {
+        color: $marine-blue;
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: $dool-gray;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    &__input-field input{
+        width: 100%;
+
+    }
+}
