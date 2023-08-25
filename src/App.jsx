@@ -1,11 +1,16 @@
-import { useState } from 'react'
-import './App.scss'
+import "./styleshseet/App.scss";
+import InputField from "./InputField";
 
-function App() {
+export default function App() {
+  let defaultProps = {
+
+  }
 
   return (
-   <h1>Hello</h1>
-  )
+    <>
+      <InputField {...{type: 'text', text: 'Name'}}/>
+      <InputField {...{type: 'email', text: 'Email Address'}}/>
+      <InputField {...{type: 'number', text: 'Phone Number'}}/>
+    </>
+  );
 }
-
-export default App

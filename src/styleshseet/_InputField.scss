@@ -1,0 +1,57 @@
+@import "./config";
+
+.input-field {
+  position: relative;
+
+  input {
+    padding: 0.5em;
+    outline: 0;
+    border: 1px solid $light-gray;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      border: 1px solid $purplish-blue;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      transform: translateY(-40px) scale(0.85);
+    }
+  }
+  label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: transform 300ms ease;
+  }
+}
+
+input[type="number"] {
+  // firefox
+  -moz-appearance: textfield;
+  // other browsers
+  appearance: text-field;
+}
+
+// :focus-within label,
+// .input-field input:not(:placeholder-shown) + label {
+//   transform: translateY(-40px) scale(0.9);
+// }
+
+// .input-field:focus-within::after {
+//   transform: scaleX(1);
+// }
+
+// .input-field label {
+//   position: absolute;
+//   font-size: 1.05em;
+//   top: 25%;
+//   left: 0.8em;
+//   cursor: pointer;
+
+//   transition: transform 300ms ease;
+
+//   color: var(--light);
+// }
