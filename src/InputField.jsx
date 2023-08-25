@@ -1,4 +1,4 @@
-import './styleshseet/_InputField.scss'
+import './styleshseet/InputField.scss'
 
 export default function InputField({
     type,
