@@ -22,7 +22,7 @@
   }
   label {
     position: absolute;
-    top: 50%;
+    top: 40px;
     left: 0;
     transition: transform 300ms ease;
   }
@@ -34,24 +34,3 @@ input[type="number"] {
   // other browsers
   appearance: text-field;
 }
-
-// :focus-within label,
-// .input-field input:not(:placeholder-shown) + label {
-//   transform: translateY(-40px) scale(0.9);
-// }
-
-// .input-field:focus-within::after {
-//   transform: scaleX(1);
-// }
-
-// .input-field label {
-//   position: absolute;
-//   font-size: 1.05em;
-//   top: 25%;
-//   left: 0.8em;
-//   cursor: pointer;
-
-//   transition: transform 300ms ease;
-
-//   color: var(--light);
-// }
