@@ -1,10 +1,13 @@
-import { useState } from 'react'
-import './App.scss'
+import React from 'react'
+import './styleshseet/App.scss'
+import SideNav from './components/SideNav'
 
-function App() {
+const App = () => {
 
   return (
-   <h1>Hello</h1>
+   <div className="form-container">
+    <SideNav />
+   </div>
   )
 }
 

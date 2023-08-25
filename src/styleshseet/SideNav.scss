@@ -1,0 +1,56 @@
+.sideNav {
+ display: grid;
+
+ > * {
+    grid-column: 1/ 1;
+    grid-row: 1 /1;
+ }
+
+ &__steps {
+    // border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: fit-content;
+    margin: 1em;
+
+    .steps {
+        // border: 3px solid green;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        color: #fff;
+        text-transform: uppercase;
+
+        .step-circle {
+            width: 35px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            display: inherit;
+            justify-content: center;
+            align-items: inherit;
+            border: 1px solid #fff;
+        }
+
+        .step-circle.active {
+            background-color: $light-blue;
+            color: #333;
+        }
+    }
+
+    .step-container {
+        display: flex;
+        flex-direction: column;
+        
+        .step {
+            font-weight: weights(light);
+            font-size: .8rem;
+        }
+
+        .step-type  {
+            font-size: .9rem;
+            font-weight: weights(bold);
+        }
+    }
+ }
+}
