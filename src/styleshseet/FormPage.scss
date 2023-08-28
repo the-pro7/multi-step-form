@@ -1,7 +1,9 @@
-.form {
+.formContainer {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    position: relative;
+    // border: 3px solid red;
 
     h1 {
         color: $marine-blue;
@@ -17,5 +19,17 @@
     &__input-field input{
         width: 100%;
 
+    }
+
+    .nextStepBtn {
+        background-color: $marine-blue;
+        color: #Fff;
+        width: fit-content;
+        border: 0;
+        border-radius: $border-radius;
+        padding: .5em 1em;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
