@@ -1,10 +1,10 @@
-# Frontend Mentor - Multi-step form 
+# Frontend Mentor - Multi-step form 📝
 
 ![preview](./design/desktop-preview.jpg)
 
 ## Welcome 👋
 
-This is a solution to the [Advice generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Multi-step form challenge](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents 📑
 
@@ -27,65 +27,45 @@ This is a solution to the [Advice generator challenge on Frontend Mentor](https:
 
 Users should be able to:
 
-- ✅ View the optimal layout for the app depending on their device's screen size
-- ✅ See hover states for all interactive elements on the page
-- ✅ Generate a new piece of advice by clicking the dice icon
+- ❌ Complete each step of the sequence
+- ❌ Go back to a previous step to update their selections
+- ❌ See a summary of their selections on the final step and confirm their order
+- ❌ View the optimal layout for the interface depending on their device's screen size
+- ❌ See hover and focus states for all interactive elements on the page
+- ❌ Receive form validation messages if:
+  - A field has been missed
+  - The email address is not formatted correctly
+  - A step is submitted, but no selection has been made
+
+Still work-in-progress(WIP)
 
 ### Screenshots 📷
 
-_My solution (Desktop):_
+<!-- _My solution (Desktop):_
 
 ![image of desktop solution](./readme-images/desktop.png)
 
 _My solution (Mobile)_
 
-![image of mobile solution](./readme-images/mobile.png)
+![image of mobile solution](./readme-images/mobile.png) -->
+
+WIP
 
 ### Links 🔗
 
-- Solution repo on Github: [here](https://github.com/BeanyTheCoder/advice-generator-app-main)
-- Solution link on Front End Mentor: [here](https://www.frontendmentor.io/solutions/advice-generator-app-html-css-advice-slip-api-iZwaF2ENc5)
+- Solution repo on Github: [here]()
+- Solution link on Front End Mentor: [here]()
 
 ## My process 🏗️
 
 ### Built with 🛠️
 
-- HTML & CSS
-- JavaScript
-- Fetch API (Web API)
-- Advice Slip API (link [here](https://api.adviceslip.com/))
+- Reactjs
 
 ### What I learned 🧠
 
-So i learned a bit of API best practices, just some stuff about API's in general.
-(_This is my first API project actually_)
-
-#### Some simple Fetch API code(which I used in this challenge)
-
 ```js
-fetch(url)
-  .then((response) => response.json())
-  .then(doSomething(response));
-```
-
-#### Advice Slip API
-
-```js
-// fetch api with advice slip url:
-fetch("https://api.adviceslip.com/advice")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    // `data.slip` is an object with `advice` property and `id` property
-    const adviceData = data.slip;
-
-    adviceText.textContent = adviceData.advice;
-    adviceId.textContent = adviceData.id;
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// some react code
 ```
 
 ### Continued development 🚀
@@ -94,18 +74,19 @@ I suppose i could add a loading circle for when a quote is being fetched from th
 
 ### Useful resources 📚
 
-- [Advice Slip API](https://api.adviceslip.com/) - This generates the advice slips used in this challenge.
+- placeholder
 
 ## Acknowledgments 🙏
 
-- Big thanks to [this youtube video](https://www.youtube.com/watch?v=2AfzKmgqWUE), as it helped with the Advice API usage
+- placeholder
 
 ## Contact 📧
 
 - Frontend Mentor - [@BeanyTheCoder](https://www.frontendmentor.io/profile/BeanyTheCoder)
-- Github - [BeanyTheCoder](https://github.com/BeanyTheCoder)
+- My Github - [BeanyTheCoder](https://github.com/BeanyTheCoder)
+- Emmanuel's Github - [the-pro7](https://github.com/the-pro7)
 
-## Author 👤
+## Authors 👨‍👦
 
 My name is Alexander Afoko Jnr. and I am a passionate 13-year-old frontend developer from Ghana.
 I hope to build up my portfolio and take my skills to the next level.
