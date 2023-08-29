@@ -90,8 +90,24 @@ select {
 	margin: 0 auto;
 	width: clamp(300px, 80vw, 900px);
 	// border: 3px solid red;
-	padding: 0.7em;
+	position: relative;
+	padding: $_spacing;
 	border-radius: $border-radius;
 	box-shadow: 3px 4px 15px rgb(0 0 0 / 0.4);
 	// grid-auto-flow: column;
+
+	
+
+.next {
+    background-color: $marine-blue;
+    color: #Fff;
+    width: fit-content;
+    border: 0;
+    border-radius: $border-radius;
+    padding: .5em 1em;
+    position: absolute;
+    bottom: $_spacing;
+    right: $_spacing;
+	cursor: pointer;
+}
 }

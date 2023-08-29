@@ -11,7 +11,7 @@ const App = () => {
     <SideNav />
     <FormPage />
     {/* <PlanSelect /> */}
-    <Button>Next step</Button>
+    <Button className="next">Next step</Button>
    </div>
   )
 }
