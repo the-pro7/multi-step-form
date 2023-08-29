@@ -18,19 +18,19 @@ const SideNav = () => {
 					stepNumber={2}
 					stepName={"Step 2"}
 					stepType={"Select Plan"}
-					active={active}
+					// active={active}
 				/>
 				<Step
 					stepNumber={3}
 					stepName={"Step 3"}
 					stepType={"Add-ons"}
-					active={active}
+					// active={active}
 				/>
 				<Step
 					stepNumber={4}
 					stepName={"Step 4"}
 					stepType={"Summary"}
-					active={active}
+					// active={active}
 				/>
 			</div>
 		</aside>
