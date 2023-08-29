@@ -1,7 +1,8 @@
 @import "./config";
 @import "./SideNav.scss";
 @import "./InputField.scss";
-@import './FormPage.scss';
+@import "./FormPage.scss";
+@import "./PlanSelect.scss";
 
 /* Box sizing rules */
 *,
@@ -83,15 +84,32 @@ select {
 }
 
 .form-container {
+	$_spacing: .7em;
 	font-family: $main-ff;
 	display: grid;
 	grid-template-columns: 3fr 5fr;
-	width: 80%;
+	width: 90%;
 	gap: 1em;
 	margin: 0 auto;
 	// border: 3px solid red;
-	padding: 1em;
+	position: relative;
+	padding: $_spacing;
 	border-radius: $border-radius;
-	box-shadow: 3px 4px 15px rgb(0 0 0 / .4);
+	box-shadow: 3px 4px 15px rgb(0 0 0 / 0.4);
 	// grid-auto-flow: column;
+
+	
+
+.next {
+    background-color: $marine-blue;
+    color: #Fff;
+    width: fit-content;
+    border: 0;
+    border-radius: $border-radius;
+    padding: .5em 1em;
+    position: absolute;
+    bottom: $_spacing;
+    right: $_spacing;
+	cursor: pointer;
+}
 }
