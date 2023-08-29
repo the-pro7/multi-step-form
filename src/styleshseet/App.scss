@@ -83,13 +83,12 @@ select {
 	}
 }
 
-.form-container {
+.container {
 	font-family: $main-ff;
 	display: grid;
 	grid-template-columns: 3fr 5fr;
-	width: 90%;
-	gap: 1em;
 	margin: 0 auto;
+	width: clamp(300px, 80vw, 900px);
 	// border: 3px solid red;
 	padding: 0.7em;
 	border-radius: $border-radius;

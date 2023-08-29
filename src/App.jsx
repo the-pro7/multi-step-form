@@ -7,7 +7,7 @@ import Button from './components/Button'
 const App = () => {
 
   return (
-   <div className="form-container">
+   <div className="container">
     <SideNav />
     <FormPage />
     {/* <PlanSelect /> */}
