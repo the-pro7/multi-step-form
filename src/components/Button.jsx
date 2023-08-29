@@ -2,9 +2,14 @@ import React from 'react'
 
 const Button = ({children, className}) => {
   return (
-    <button className={className}>
-        {children}
-    </button>
+   <div className="cta-buttons">
+     <button className='back'>
+      Go back
+      </button>
+      <button className={className}>
+          {children}
+      </button>
+   </div>
   )
 }
 
