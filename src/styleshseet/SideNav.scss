@@ -6,6 +6,18 @@
     grid-row: 1 /1;
  }
 
+ &__image {
+    display: flex;
+    // border: 3px solid red;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    overflow: clip;
+    border-radius: .5rem;
+
+    img {
+        height: 100%;
+    }
+ }
+
  &__steps {
     // border: 3px solid white;
     display: flex;
