@@ -84,7 +84,7 @@ select {
 }
 
 .form-container {
-	$_spacing: .7em;
+	$_spacing: 0.7em;
 	font-family: $main-ff;
 	display: grid;
 	grid-template-columns: 3fr 5fr;
@@ -98,18 +98,30 @@ select {
 	box-shadow: 3px 4px 15px rgb(0 0 0 / 0.4);
 	// grid-auto-flow: column;
 
-	
+	.cta-buttons {
+		position: absolute;
+		bottom: $_spacing + .5em;
+		right: $_spacing + 3em;
+		width: 51%;
+		display: flex;
+		justify-content: space-between;
 
-.next {
-    background-color: $marine-blue;
-    color: #Fff;
-    width: fit-content;
-    border: 0;
-    border-radius: $border-radius;
-    padding: .5em 1em;
-    position: absolute;
-    bottom: $_spacing;
-    right: $_spacing;
-	cursor: pointer;
-}
+		> * {
+			cursor: pointer;
+			border: 0;
+			text-transform: capitalize;
+		}
+
+		.back {
+			color: $cool-gray;
+			background-color: transparent;
+		}
+		.next {
+			background-color: $marine-blue;
+			color: #fff;
+			width: fit-content;
+			border-radius: $border-radius;
+			padding: 0.5em 1em;
+		}
+	}
 }
