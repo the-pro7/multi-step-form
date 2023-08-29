@@ -83,19 +83,18 @@ select {
 	}
 }
 
-.form-container {
+.container {
 	$_spacing: 0.7em;
 	font-family: $main-ff;
 	display: grid;
-	grid-template-columns: 3fr 5fr;
+	grid-template-columns: 1fr  auto;
 	margin: 0 auto;
-	width: clamp(300px, 80vw, 900px);
-	// border: 3px solid red;
+	width: clamp(350px, 70vw, 800px);
+	height: 80vh;
 	position: relative;
 	padding: $_spacing;
 	border-radius: $border-radius;
 	box-shadow: 3px 4px 15px rgb(0 0 0 / 0.4);
-	// grid-auto-flow: column;
 
 	.cta-buttons {
 		position: absolute;
