@@ -70,7 +70,7 @@ WIP
 
 ### Continued development 🚀
 
-I suppose i could add a loading circle for when a quote is being fetched from the server, _but that is not yet decided._
+I suppose I could add a loading circle for when a quote is being fetched from the server, _but that is not yet decided._
 
 ### Useful resources 📚
 
