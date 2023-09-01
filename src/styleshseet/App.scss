@@ -87,7 +87,7 @@ select {
 	$_spacing: 0.7em;
 	font-family: $main-ff;
 	display: grid;
-	grid-template-columns: 1fr  auto;
+	grid-template-columns:repeat(auto-fit, minmax(25%, 1fr));
 	margin: 0 auto;
 	width: clamp(350px, 70vw, 800px);
 	height: 80vh;
